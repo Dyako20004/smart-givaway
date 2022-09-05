@@ -1,0 +1,11 @@
+@@ -35,9 +35,7 @@ module.exports = (client) => {
+      }
+      try {
+        client.on("ready", async () => {
+          client.guilds.cache
+            .get("936732561508565045")
+            .commands.set(client.arrayOfcommands);
+          client.application.commands.set(client.arrayOfcommands)
+        });
+      } catch (e) {
+        console.log(e.message);
